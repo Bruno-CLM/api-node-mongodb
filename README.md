@@ -61,19 +61,6 @@ A API possui as seguintes rotas principais:
 
 Certifique-se de enviar as solicitações HTTP adequadas para cada rota, com os dados corretos no corpo da requisição, quando aplicável.
 
-## 🤝 Contribuição
-
-Se você deseja contribuir para este projeto, siga as etapas abaixo:
-
-1. Faça um fork deste repositório.
-2. Crie um branch para sua nova funcionalidade ou correção de bug: `git checkout -b minha-nova-funcionalidade`.
-3. Faça suas alterações e adicione os arquivos modificados: `git add .`.
-4. Faça o commit das suas alterações: `git commit -m "Minha nova funcionalidade"`.
-5. Envie para o branch remoto: `git push origin minha-nova-funcionalidade`.
-6. Crie um novo Pull Request.
-
-Peço desculpas pela omissão. Aqui está a seção de URL da API atualizada no arquivo `README.md`, incluindo o exemplo de JSON para a rota POST:
-
 ## 🔗 URL da API
 
 A API está hospedada em:
@@ -110,6 +97,17 @@ Você pode criar uma nova pessoa enviando uma solicitação POST para a rota `/a
 ```
 
 Certifique-se de enviar uma solicitação POST para a rota `/api-node/person/create` com um corpo de requisição JSON válido, conforme exemplificado acima, para criar uma nova pessoa na API.
+
+## 🤝 Contribuição
+
+Se você deseja contribuir para este projeto, siga as etapas abaixo:
+
+1. Faça um fork deste repositório.
+2. Crie um branch para sua nova funcionalidade ou correção de bug: `git checkout -b minha-nova-funcionalidade`.
+3. Faça suas alterações e adicione os arquivos modificados: `git add .`.
+4. Faça o commit das suas alterações: `git commit -m "Minha nova funcionalidade"`.
+5. Envie para o branch remoto: `git push origin minha-nova-funcionalidade`.
+6. Crie um novo Pull Request.
 
 ## 📄 Licença
 
