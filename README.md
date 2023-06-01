@@ -72,25 +72,44 @@ Se você deseja contribuir para este projeto, siga as etapas abaixo:
 5. Envie para o branch remoto: `git push origin minha-nova-funcionalidade`.
 6. Crie um novo Pull Request.
 
+Peço desculpas pela omissão. Aqui está a seção de URL da API atualizada no arquivo `README.md`, incluindo o exemplo de JSON para a rota POST:
+
 ## 🔗 URL da API
+
 A API está hospedada em:
 
+```
 https://nvt1v1w9sl.execute-api.us-east-1.amazonaws.com/
+```
 
 A parte inicial da URL representa o domínio e o caminho base da API. A partir dessa URL base, você pode adicionar os caminhos específicos para acessar diferentes rotas da API.
 
-Por exemplo:
+### Rotas da API
 
-https://nvt1v1w9sl.execute-api.us-east-1.amazonaws.com/api-node/person/create: Esta rota é usada para criar um novo registro de pessoa. Você deve enviar uma solicitação HTTP POST para este endpoint com os dados da pessoa no corpo da requisição.
+- `POST /api-node/person/create`: Cria um novo registro de pessoa com base nos dados fornecidos no corpo da requisição. ➕
+- `GET /api-node/person`: Retorna todos os registros de pessoas cadastradas. 📋
+- `GET /api-node/person/:id`: Retorna um registro de pessoa específico com base no ID fornecido. 🔍
+- `PUT /api-node/person/:id`: Atualiza um registro de pessoa existente com base no ID fornecido e nos dados fornecidos no corpo da requisição. ✏️
+- `DELETE /api-node/person/:id`: Exclui um registro de pessoa específico com base no ID fornecido. ❌
 
-https://nvt1v1w9sl.execute-api.us-east-1.amazonaws.com/api-node/person: Esta rota retorna todos os registros de pessoas cadastradas. Você pode fazer uma solicitação HTTP GET para este endpoint para obter uma lista de todas as pessoas.
+Certifique-se de enviar as solicitações HTTP adequadas para cada rota, com os dados corretos no corpo da requisição, quando aplicável.
 
-https://nvt1v1w9sl.execute-api.us-east-1.amazonaws.com/api-node/person/:id: Esta rota retorna um registro de pessoa específico com base no ID fornecido. Substitua :id pelo ID real da pessoa que você deseja obter. Por exemplo, /api-node/person/123 retornaria os detalhes da pessoa com ID 123.
+### Exemplo de requisição POST
 
-https://nvt1v1w9sl.execute-api.us-east-1.amazonaws.com/api-node/person/:id: Esta rota é usada para atualizar um registro de pessoa existente com base no ID fornecido. Você deve enviar uma solicitação HTTP PUT para este endpoint com os dados atualizados no corpo da requisição. Substitua :id pelo ID real da pessoa que você deseja atualizar.
+Você pode criar uma nova pessoa enviando uma solicitação POST para a rota `/api-node/person/create` com um corpo de requisição JSON contendo os dados da pessoa. Por exemplo:
 
-https://nvt1v1w9sl.execute-api.us-east-1.amazonaws.com/api-node/person/:id: Esta rota é usada para excluir um registro de pessoa específico com base no ID fornecido. Você deve enviar uma solicitação HTTP DELETE para este endpoint. Substitua :id pelo ID real da pessoa que você deseja excluir.
-Certifique-se de utilizar essas URLs completas para acessar as rotas correspondentes na API.
+**Rota:** `POST /api-node/person/create`
+
+**Corpo da requisição (JSON):**
+```json
+{
+    "name": "Mario",
+    "salary": 3400,
+    "approved": true
+}
+```
+
+Certifique-se de enviar uma solicitação POST para a rota `/api-node/person/create` com um corpo de requisição JSON válido, conforme exemplificado acima, para criar uma nova pessoa na API.
 
 ## 📄 Licença
 
